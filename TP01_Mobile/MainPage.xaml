@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP01_Mobile.MainPage">
+
+    <ScrollView>
+       
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+         
+                
+                
+            <Entry x:Name="entry"
+                  Placeholder="Login"/>
+        
+            <Entry x:Name="entry1"
+                   Placeholder="Senha"
+                   IsPassword="true"/>
+            
+            <Button
+                x:Name="CounterBtn"
+                Text="OK"
+                CornerRadius="10"
+                BackgroundColor="Blue"
+                TextColor ="Black"
+                SemanticProperties.Hint="Logar"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+
+            <Button 
+                x:Name="limpa"
+                Text="Limpar"
+                CornerRadius="10"
+                BackgroundColor="Blue"
+                TextColor ="Black"
+                HorizontalOptions="Center"
+                Clicked="Limpar"/>
+
+            <Button 
+                x:Name="creditos"
+                Text="Creditos"
+                CornerRadius="10"
+                BackgroundColor="Blue"
+                TextColor ="Black"
+                HorizontalOptions="Center"
+                Clicked="Creditos"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
